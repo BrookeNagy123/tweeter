@@ -1,4 +1,4 @@
-header {
+.header {
   display:flex;
   justify-content: center;
   align-items: center;
@@ -16,5 +16,5 @@ img {
 }
 
 h2 {
-  text-align :center;
+  text-align:center;
 }
