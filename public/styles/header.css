@@ -6,9 +6,9 @@ header {
   background-color: #fa8a00;
   background-image: url("https://www.transparenttextures.com/theme/images/transparent.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  height: 400px;
+  height: 544px;
   width: 100%;
-  padding: 15em
+  margin-top: 120px;
 }
 
 img {
