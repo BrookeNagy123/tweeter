@@ -5,6 +5,7 @@
  */
 
 // Fake data taken from initial-tweets.json
+
 const data = [
   {
     "user": {
@@ -63,15 +64,20 @@ const date = new Date(tweet.created_at)
 renderTweets(data);
 
 
+$('#tweet').on('submit', function(event){
+  event.preventDefault()
+  $.ajax({
+    url: 'http://localhost:8080/tweets/',
+    type: 'POST',
+    data: $('#tweet').serialize()
+    })
+    .then(response => {
+      console.log(response)
+    })
+});
 
-// const form = document.getElementById("tweet")
-// form.addEventListener("submit", function(event) {
-//   //const tweet = document.getElementById("tweet-text");
-//   event.preventDefault()
-//   const xhttp = new XMLHttpRequest();
-//   xhttp.open("POST", 'http://localhost:8080/tweets', true);
-//   xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
-//   xhttp.send();
-// })
+
+
+
 
 
