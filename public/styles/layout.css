@@ -10,16 +10,76 @@ html {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
-
 body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: 'Source Sans Pro';
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+main {
+  background-color: #f4f1ec;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.existing-tweets{
+  border: 3px solid #545149;
+  padding: 40px;
+}
+
+.existing-tweets:hover{
+  border: 3px solid #545149;
+  padding: 50px;
+  box-shadow: 5px 5px 5px 5px #545149;
+}
+
+.tweet-header{
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.usertag{
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-start;
+  padding-bottom: 50px;
+  opacity: 0.5;
+}
+
+.old-tweet{
+  display:flex;
+  padding-bottom: 10px;
+  border-bottom: 3px solid black;
+}
+
+.date{
+  padding-top: 10px;
+  font-size: medium;
+}
+
+.icons{
+  display: flex;
+  justify-content: flex-end;
+  font-size: small;
+}
+
+.icons:hover{
+  display: flex;
+  justify-content: flex-end;
+  font-size: small;
+}
+
+#flag:hover{
+  color:gold
+}
+
+#retweet:hover{
+  color: blue
+}
+
+#heart:hover{
+  color:red
+}
+
