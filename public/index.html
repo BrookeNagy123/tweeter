@@ -32,10 +32,10 @@
     <nav>
       <span>tweeter</span>
       <div class="newtweet"> Write a new tweet
-      <i class="fa-solid fa-angles-down"> </i>
+      <i id="arrows" class="fa-solid fa-angles-down"> </i>
       </div> 
     </nav>
-    <header>
+    <header class="header">
       <div>
           <img src="/images/profile-hex.png"> 
       </div>
@@ -44,7 +44,6 @@
           <h2>Brooke Nagy</h2>
       </div>
   </header>
-  
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
@@ -57,6 +56,22 @@
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
+      </section>
+      <section class="existing-tweets">
+        <article>  
+          <header class="tweet-header"> 
+            <i class="fa-solid fa-user-tie"></i>
+            <div class="user">Newton</div>
+          </header>
+            <div class="usertag">@SirIsaac</div>
+            <div class="old-tweet">If I have seen further it is by standing on the shoulders of giants</div>
+            <div class="date">10 days ago</div>
+            <div class="icons">
+            <i id="flag" class="fa-solid fa-flag"></i>
+            <i id="retweet" class="fa-solid fa-retweet"></i>
+            <i id="heart" class="fa-solid fa-heart"></i>
+          </div>
+        </article>
       </section>
     </main>
     <script type="module" src="./scripts/client.js"></script>
