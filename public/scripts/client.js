@@ -15,11 +15,11 @@
 
 
 const renderTweets = function(tweets) {
-  // loops through tweets
+  $('.tweets-container').empty();
   tweets.forEach(tweet => {
     // calls createTweetElement for each tweet
     const tweetHtml = createTweetElement(tweet);
-    $('.tweets-container').append(tweetHtml);
+    $('.tweets-container').prepend(tweetHtml);
   })
 }
 
@@ -45,13 +45,22 @@ const date = timeago.format(tweet.created_at)
 
 $('#tweet').on('submit', function(event){
   event.preventDefault()
+  const textarea = document.querySelector("#tweet-text");
+  const textareaValue = textarea.value;
+  if(textareaValue === undefined || textareaValue === null || textareaValue === ""){
+    alert("Form is empty");
+    return;
+  } else if (textareaValue.length > 140){
+    alert("Please use less than 140 characters for your tweet")
+    return;
+  }
   $.ajax({
     url: 'http://localhost:8080/tweets/',
     type: 'POST',
     data: $('#tweet').serialize()
     })
     .then(response => {
-      console.log(response)
+      loadTweets();
     })
 });
 
