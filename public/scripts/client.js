@@ -23,16 +23,23 @@ const renderTweets = function(tweets) {
   })
 }
 
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 //Responsible for returning a tweet <article> element containing the entire HTML structure of the tweet.
 const createTweetElement = function(tweet) {
 const date = timeago.format(tweet.created_at)  
+const safeHTML = `${escape(tweet.content.text)}`;
   let $tweet = $(`<article class="new-tweet">
     <header class="tweet-header"> 
       <i class="fa-solid fa-user-tie"></i>
       <div class="user">${tweet.user.name}</div>
      </header>
       <div class="usertag">${tweet.user.handle}</div>
-      <div class="old-tweet">${tweet.content.text}</div>
+      <div class="old-tweet">${safeHTML}</div>
       <div class="date">${date}</div>
       <div class="icons">
         <i id="flag" class="fa-solid fa-flag"></i>
