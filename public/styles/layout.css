@@ -23,12 +23,12 @@ main {
   margin: 0 auto;
 }
 
-.existing-tweets{
+.tweets-container{
   border: 3px solid #545149;
   padding: 40px;
 }
 
-.existing-tweets:hover{
+.tweets-container:hover{
   border: 3px solid #545149;
   padding: 50px;
   box-shadow: 5px 5px 5px 5px #545149;
@@ -37,6 +37,7 @@ main {
 .tweet-header{
   display: flex;
   justify-content: flex-start;
+  margin-top: 50px;
   gap: 10px;
 }
 
@@ -83,3 +84,16 @@ main {
   color:red
 }
 
+.error{
+  display: flex;
+  justify-content: flex-start;
+  color:red;
+  border: 3px solid red;
+}
+
+.errorLength{
+  display: flex;
+  justify-content: flex-start;
+  color:red;
+  border: 3px solid red;
+}
