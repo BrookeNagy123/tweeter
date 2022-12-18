@@ -47,7 +47,8 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
+        <div style = "display:none" class="error">Error: Please enter a valid tweet </div>
+        <div style = "display:none" class="errorLength">Error: Tweet is longer than 140 characters.</div>
         <form id="tweet" action="/tweets/" method="post">
           <label for="tweet-text"></label>
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
@@ -58,7 +59,7 @@
         </form>
       </section>
       <section class="tweets-container">
-        <article class="new-tweet">  
+        <article class="existing-tweet">  
           <header class="tweet-header"> 
             <i class="fa-solid fa-user-tie"></i>
             <div class="user">Newton</div>
