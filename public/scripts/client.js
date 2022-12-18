@@ -51,14 +51,16 @@ const safeHTML = `${escape(tweet.content.text)}`;
  }
 
 $('#tweet').on('submit', function(event){
+  $( ".error" ).slideUp( "medium");
+  $( ".errorLength" ).slideUp( "medium");
   event.preventDefault()
   const textarea = document.querySelector("#tweet-text");
   const textareaValue = textarea.value;
   if(textareaValue === undefined || textareaValue === null || textareaValue === ""){
-    alert("Form is empty");
+    $( ".error" ).slideDown("slow");
     return;
   } else if (textareaValue.length > 140){
-    alert("Please use less than 140 characters for your tweet")
+    $( ".errorLength" ).slideDown("slow");
     return;
   }
   $.ajax({
