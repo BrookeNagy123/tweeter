@@ -1,3 +1,5 @@
+// JQuery used to locate counter and on input will reduce counter from 140. After the user goes past a count of 140 the counter will display red font. 
+
 $(document).ready(function() {
   let max = 140;
   $("#tweet-text").on("input",function() {
