@@ -1,3 +1,4 @@
+/* CSS Styles for Header */
 .header {
   display:flex;
   justify-content: center;
@@ -9,17 +10,17 @@
   width: 100%;
   margin-top: 120px;
   margin-bottom: 20px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 img {
-  width: 200px;
+  width: 75%;
   height: auto;
 }
 
-h2 {
-  text-align:center;
-}
 
+/* Responsive Design  */
 @media (min-width: 1024px) {
   .header{
   display:flex;
@@ -35,5 +36,5 @@ h2 {
   margin-bottom: 200px;
   margin-right: 50px;
   margin-left: 50px;
-  }
+    }
   }
