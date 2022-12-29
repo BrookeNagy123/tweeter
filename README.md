@@ -16,3 +16,12 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+- Body-Parser 
+- Chance 
+- MD5 
+
+## Preview of Tweeter 
+
+!["Tweeter"](https://github.com/BrookeNagy123/tweeter/blob/master/docs/Tweeter%20for%20Desktop.png?raw=true)
+!["Tweeter"](https://github.com/BrookeNagy123/tweeter/blob/master/docs/Tweeter%20for%20Tablets.png?raw=true)
+
