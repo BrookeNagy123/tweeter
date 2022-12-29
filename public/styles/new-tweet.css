@@ -1,3 +1,4 @@
+/* CSS Styles for New Tweet Form */
 form {
   display: flex;
   justify-content: center;
@@ -29,13 +30,14 @@ button {
   border-bottom: 3px solid black;
 }
 
+/* Responsive Design  */
 @media (min-width: 1024px) {
-  form{
+  form {
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding: 50px;
-  margin-top: 200px;
+  margin-top: 125px;
   margin-right: 50px
   }
-  }
+}
