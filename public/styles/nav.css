@@ -1,6 +1,7 @@
 nav {
   color: #FFFFFF;
-  background-color: #4056a1;
+  background-color: #fa8a00;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   height: 120px;
   padding: 1.5em;
   position: fixed;
@@ -19,3 +20,11 @@ nav {
  #arrows{
   color: red;
  }
+
+ @media (min-width: 1024px) {
+  nav{
+    background-color: #4056a1;
+    background-image: none;
+  }
+  }
+
