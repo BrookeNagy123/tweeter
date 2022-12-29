@@ -22,6 +22,6 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Preview of Tweeter 
 
-!["Tweeter"](https://github.com/BrookeNagy123/tweeter/blob/master/docs/Tweeter%20for%20Desktop.png?raw=true)
-!["Tweeter"](https://github.com/BrookeNagy123/tweeter/blob/master/docs/Tweeter%20for%20Tablets.png?raw=true)
+!["Tweeter for Desktop"](https://github.com/BrookeNagy123/tweeter/blob/master/docs/Desktop.png?raw=true)
+!["Tweeter for Tablets"](https://github.com/BrookeNagy123/tweeter/blob/master/docs/Tweeter%20for%20Tablets.png?raw=true)
 
