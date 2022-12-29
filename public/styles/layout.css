@@ -1,8 +1,4 @@
-/*
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- * https://css-tricks.com/international-box-sizing-awareness-day/
- * Do not modify these two selectors, please
- */
+/* CSS Styles for Main Layout */
 html {
   box-sizing: border-box;
 }
@@ -21,23 +17,25 @@ main {
   background-color: #f4f1ec;
   width: 90%;
   margin: 0 auto;
+
 }
 
-.tweets-container{
+/* CSS Styles for Tweets Container */
+ .tweets{
   border: 3px solid #545149;
   padding: 40px;
+  margin-bottom: 50px;
 }
 
-.tweets-container:hover{
+.tweets:hover{
   border: 3px solid #545149;
   padding: 50px;
   box-shadow: 5px 5px 5px 5px #545149;
-}
+} 
 
 .tweet-header{
   display: flex;
   justify-content: flex-start;
-  margin-top: 50px;
   gap: 10px;
 }
 
@@ -84,6 +82,7 @@ main {
   color:red
 }
 
+/* CSS Styles for Error Handling  */
 .error{
   display: flex;
   justify-content: flex-start;
@@ -98,16 +97,32 @@ main {
   border: 3px solid red;
 }
 
-
+/* Responsive Design  */
 @media (min-width: 1024px) {
   body{
     display:flex;
     flex-direction:row;
   }
-  .tweets-container{
+  .tweets{
     border: 3px solid #545149;
     padding: 40px;
     margin-right: 50px;
   }
-
+  .error{
+    display: flex;
+    margin-top: 200px;
+    margin-right: 50px;
+    justify-content: flex-start;
+    color:red;
+    border: 3px solid red;
   }
+  
+  .errorLength{
+    display: flex;
+    margin-top: 200px;
+    margin-right: 50px;
+    justify-content: flex-start;
+    color:red;
+    border: 3px solid red;
+  }
+}
