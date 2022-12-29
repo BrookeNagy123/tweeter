@@ -28,3 +28,14 @@ button {
   border-left-style: hidden;
   border-bottom: 3px solid black;
 }
+
+@media (min-width: 1024px) {
+  form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  margin-top: 200px;
+  margin-right: 50px
+  }
+  }
