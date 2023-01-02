@@ -19,22 +19,13 @@ img {
   height: auto;
 }
 
-
 /* Responsive Design  */
 @media (min-width: 1024px) {
-  .header{
-  display:flex;
-  flex-direction:row;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #fa8a00;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-  height: 400px;
+.header {
   width: 50%;
   margin-top: 200px;
   margin-bottom: 200px;
   margin-right: 50px;
   margin-left: 50px;
-    }
   }
+}
