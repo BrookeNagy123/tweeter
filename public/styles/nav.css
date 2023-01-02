@@ -1,5 +1,9 @@
 /* CSS Styles for Navagation Bar */
 nav {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
   color: #FFFFFF;
   background-color: #fa8a00;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
@@ -14,8 +18,17 @@ nav {
   font-family: "Bungee"
  }
 
- .newtweet {
-  text-align: right;
+ #navBtn {
+   color: #FFFFFF;
+   cursor: pointer;
+   padding: 20px 20px 20px 20px; 
+   border-top-style: hidden;
+   border-right-style: hidden;
+   border-left-style: hidden;
+   border-bottom-style: hidden;
+   background-color: #fa8a00;
+   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+   font-family: 'Source Sans Pro';
  }
 
  #arrows{
@@ -25,6 +38,12 @@ nav {
  /* Responsive Design  */
  @media (min-width: 1024px) {
   nav {
+    background-color: #4056a1;
+    background-image: none;
+  }
+
+  #navBtn {
+    color: #FFFFFF;
     background-color: #4056a1;
     background-image: none;
     }
