@@ -17,112 +17,118 @@ main {
   background-color: #f4f1ec;
   width: 90%;
   margin: 0 auto;
-
 }
 
 /* CSS Styles for Tweets Container */
- .tweets{
+ .tweets {
   border: 3px solid #545149;
   padding: 40px;
   margin-bottom: 50px;
 }
 
-.tweets:hover{
+.tweets:hover {
   border: 3px solid #545149;
   padding: 50px;
   box-shadow: 5px 5px 5px 5px #545149;
 } 
 
-.tweet-header{
+.tweet-header {
   display: flex;
   justify-content: flex-start;
   gap: 10px;
 }
 
-.usertag{
+.usertag {
   display: flex;
   justify-content: flex-end;
   align-self: flex-start;
   padding-bottom: 50px;
-  opacity: 0.5;
 }
 
-.old-tweet{
+.old-tweet {
   display:flex;
   padding-bottom: 10px;
   border-bottom: 3px solid black;
 }
 
-.date{
+.date {
   padding-top: 10px;
   font-size: medium;
 }
 
-.icons{
+.icons {
   display: flex;
   justify-content: flex-end;
   font-size: small;
 }
 
-.icons:hover{
+.icons:hover {
   display: flex;
   justify-content: flex-end;
   font-size: small;
 }
 
-#flag:hover{
+#flag:hover {
   color:gold
 }
 
-#retweet:hover{
+#retweet:hover {
   color: blue
 }
 
-#heart:hover{
+#heart:hover {
   color:red
 }
 
 /* CSS Styles for Error Handling  */
-.error{
+.error {
   display: flex;
   justify-content: flex-start;
   color:red;
   border: 3px solid red;
 }
 
-.errorLength{
+.errorLength {
   display: flex;
   justify-content: flex-start;
   color:red;
   border: 3px solid red;
+}
+
+/* CSS Styles for Scroll to Top Button */
+#topBtn{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border: none;
+  color: white;
+  background-color: red;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 20px;
 }
 
 /* Responsive Design  */
 @media (min-width: 1024px) {
+
   body{
     display:flex;
     flex-direction:row;
   }
+
   .tweets{
-    border: 3px solid #545149;
-    padding: 40px;
+    margin-top: 125px;
     margin-right: 50px;
   }
+
   .error{
-    display: flex;
     margin-top: 200px;
     margin-right: 50px;
-    justify-content: flex-start;
-    color:red;
-    border: 3px solid red;
   }
   
   .errorLength{
-    display: flex;
     margin-top: 200px;
     margin-right: 50px;
-    justify-content: flex-start;
-    color:red;
-    border: 3px solid red;
   }
+
 }
