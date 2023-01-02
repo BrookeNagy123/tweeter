@@ -70,8 +70,11 @@ $(document).ready(function() {
         $("#tweet").find('.counter').text('140'); //reset counter to 140 
       });
   });
+
+//Responsible for toggling the tweet form when nagivation button is clicked. 
+$('#navBtn').on('click', function(event) {
+  $("#tweet").slideToggle("medium");
+  $("#tweet-text").focus();
 });
 
-
-
-
+});
